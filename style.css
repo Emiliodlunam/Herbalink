@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-primary: #2d7a35; /* Verde fuerte de Herbalink */
+    --color-secondary: #58a860; /* Verde más claro */
+    --color-dark: #333;
+    --color-light: #f5f7f2;
+    --color-white: #fff;
+    --color-cta-button: #7ac742; /* Verde brillante del botón "EMPIEZA AHORA" */
+    --color-subscribe: #b07c5a; /* Marrón/naranja del botón "Suscribir" */
+    --color-text-light: #fefefe;
+    --color-border: #e0e0e0;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagen del logo */
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+/* Texto del logo */
+.logo-text {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+.social-icon img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 1;
+}
+
+/* --- SECCIÓN HERO --- */
+.hero-image-new {
+    background: url('imagenes/a.png') no-repeat center center/cover;
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero-image-new::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+.hero-content-new {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-new h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-new p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.start-button {
+    display: inline-block;
+    background-color: var(--color-cta-button);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+
+/* --- SECCIÓN ÍCONOS DE VALOR (Antigua) --- */
+.value-icons-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.icon-box {
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.icon-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+.icon-box h3 {
+    color: var(--color-primary);
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.icon-box p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* --- SECCIÓN 1: PROPÓSITOS (MISIÓN/VISIÓN/VALORES) --- */
+.propósitos-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: var(--color-light); /* Fondo claro */
+}
+
+.propósitos-section h2 {
+    color: var(--color-dark);
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.propósito-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.propósito-card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.propósito-card:hover {
+    transform: translateY(-5px);
+}
+
+.propósito-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.propósito-card h3 {
+    color: var(--color-primary);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.propósito-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* --- SECCIÓN 2: PRODUCTOS MÁS VENDIDOS --- */
+.essentials-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-border);
+}
+
+.essentials-section h2 {
+    color: var(--color-dark);
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.product-grid-essentials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card-essential {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card-essential:hover {
+    transform: translateY(-5px);
+}
+
+.product-card-essential img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.product-card-essential h3 {
+    color: var(--color-dark);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.view-product-link {
+    display: inline-block;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.view-product-link:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+
+/* --- SECCIÓN 3: CARRUSEL DE EXPERTOS --- */
+.expert-reviews-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--color-light);
+    border-top: 1px solid var(--color-border);
+}
+
+.expert-reviews-section h2 {
+    color: var(--color-dark);
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.carousel-container {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+    min-height: 150px;
+}
+
+/* Gestión de Slides (para JS) */
+.review-slide {
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.review-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.review-slide.hidden {
+    opacity: 0;
+    position: absolute;
+}
+
+.review-text {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 0.95em;
+}
+
+/* Navegación del Carrusel (Puntos) */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--color-primary);
+}
+
+
+/* --- NEWSLETTER Y FOOTER --- */
+.newsletter-new {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.newsletter-new p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+#newsletterFormNew {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-new input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe-button {
+    background-color: var(--color-subscribe); /* Color marrón/naranja */
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #94694b;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- ESTILOS DEL MODAL (EXISTENTES) --- */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: var(--color-white);
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; 
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--color-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.message.error {
+    color: red;
+}
+
+.message.success {
+    color: var(--color-primary);
+}

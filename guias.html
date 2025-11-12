@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías de Cultivo - Herbalink</title>
+    <link rel="stylesheet" href="styles-guias.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
+</head>
+
+<div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Acceder</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </div>
+    </div>
+    
+    
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Herbalink" class="logo-img"> 
+            <h1 class="logo-text">HERBALINK</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="guias.html" class="active">Guías</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="#" id="loginBtn">Iniciar Sesión</a></li>
+                <li class="social-icon"><a href="https://www.instagram.com/herbalink_modular?igsh=MXh0bjhkNXc3ZWFleg%3D%3D"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-guias-new">
+        <div class="hero-content-new">
+            <h1>DOMINA TU HUERTO 🪴</h1>
+            <p>Conocimiento experto al alcance de tu mano: guías, consejos y tutoriales.</p>
+        </div>
+    </section>
+
+    <section class="recommendations-section">
+        <h2>Recomendaciones para un Cultivo Exitoso</h2>
+        <div class="recommendations-grid">
+            <div class="rec-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/864/864673.png" alt="Riego">
+                <h3>Riego</h3>
+                <p>La clave es la consistencia, no la cantidad diaria. ¡Toca la tierra!</p>
+            </div>
+            <div class="rec-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2829/2829763.png" alt="Nutrición">
+                <h3>Nutrición</h3>
+                <p>Fertiliza cada 4-6 semanas en primavera y verano con abono orgánico.</p>
+            </div>
+            <div class="rec-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3673/3673323.png" alt="Plagas">
+                <h3>Control</h3>
+                <p>Inspecciona las hojas semanalmente. Actúa rápido con jabón potásico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <h2>Instrucciones Paso a Paso: como ensamblar tu kit</h2>
+        <div class="step-by-step-grid">
+            
+            <div class="step-card" data-step="1">
+                <h3 class="step-header">Paso 1: Prepara las Macetas <span class="toggle-icon">+</span></h3>
+                <div class="step-content">
+                    <p>Identifica las bolsas de sustratos y semillas, primero llena las macetas con el sustrato dejando 2cm en la parte inferior para la semilla</p>
+                 <img src="imagenes/imgkit2.jpeg" alt="Preparar maceta" class="step-image">
+                </div>
+            </div>
+            <div class="step-card" data-step="2">
+                <h3 class="step-header">Paso 2: Humedece el Sustrato <span class="toggle-icon">+</span></h3>
+                <div class="step-content">
+                    <p>Riégala suavemente la tierra, evitando que esté demasiado lodosa, pero asegúrate de que esté uniformemente húmeda. Esto facilitará el agarre inicial de la planta.</p>
+                <img src="imagenes/imgrie.png" alt="Preparar maceta" class="step-image">
+                </div>
+            </div>
+            <div class="step-card" data-step="3">
+                <h3 class="step-header">Paso 3: Coloca la semilla <span class="toggle-icon">+</span></h3>
+                <div class="step-content">
+                    <p>Coloca una o dos semillas de su eleccion en cada maceta. Tenga en cuenta que si usas más de dos, las plántas competirán por los nutrientes y la luz, debilitándose.</p>
+                    <img src="imagenes/imgsem.png" alt="Preparar maceta" class="step-image">
+                </div>
+            </div>
+            <div class="step-card" data-step="4">
+                <h3 class="step-header">Paso 4: Riego Final y Ubicación <span class="toggle-icon">+</span></h3>
+                <div class="step-content">
+                    <p>Cubre las semillas con el sustrato y compacte la superficie de la tierra con suavidad. 
+                   
+                    Finalmente, une las macetas en un lugar de su preferencia</p>
+                    <img src="imagenes/imgesc.jpeg" alt="Preparar maceta" class="step-image">
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class="videos-section">
+        <h2>Videos que te Ayudarán</h2>
+        <div class="videos-grid">
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v1.mp4" type="video/mp4">
+                </video>
+                    <h4>Huerto para principiantes</h4>
+                    <p>10 Consejos para comenzar</p>
+            </div>
+            
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v2.mp4" type="video/mp4">
+                </video>
+                    <h4>10 cultivos para empezar tu huerto</h4>
+                    <p>Las mejores plantas para principiantes</p>
+            </div>
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v3.mp4" type="video/mp4">
+                </video>
+                    <h4>¿Cómo cuidar tu huerto?</h4>
+                    <p>Cómo ser autosuficiente con un huerto</p>
+            </div>
+
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v4.mp4" type="video/mp4">
+                </video>
+                    <h4>Cuidados para tus plantas</h4>
+                    <p>Como tener éxito con un huerto en macetas</p>
+            </div>
+            
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v5.mp4" type="video/mp4">
+                </video>
+                    <h4>HORTALIZAS y VERDURAS</h4>
+                    <p>Las mejores plantas que se pueden sembrar todo el año</p>
+            </div>
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v6.mp4" type="video/mp4">
+                </video>
+                    <h4>Las lombrizes son tus amigas</h4>
+                    <p>Trucos para que tu huerto se llene de lombrices y tus cultivos crezcan sanos</p>
+            </div>
+
+        </div>
+    </section>
+
+   <div id="loginToViewAd" class="premium-ad-container" style="display: none;">
+        <div class="ad-content">
+            <h3>¡Contenido Exclusivo de Expertos! 🔒</h3>
+            <p>Inicia sesión ahora para acceder a **videos avanzados**, sesiones Q&A y guías premium.</p>
+            <button id="openLoginFromAd" class="cta-ad-button">Ver más (Inicia Sesión)</button>
+        </div>
+    </div>
+    
+    <section class="videos-section2" id="videosSection2" style="display: none;"> 
+        <h2>Videos Con Nuestros Expertos</h2>
+        <div class="videos-grid">
+            
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v7.mp4" type="video/mp4">
+                </video>
+                <h4> ¿Porqué NO germinan tus semillas?</h4>
+                <p>Cuida tus plantas y ayudalas a crecer con estos consejos</p>
+            </div>
+            
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v8.mp4" type="video/mp4">
+                </video>
+                <h4>Plagas</h4>
+                <p>Como identificar y eliminar las plagas de tus plantas</p>
+            </div>
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v9.mp4" type="video/mp4">
+                </video>
+                <h4>¿Cómo regar bien?</h4>
+                <p>Consejos indispensables para cuidar el riego de tus plantas</p>
+            </div>
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v10.mp4" type="video/mp4">
+                </video>
+                <h4>Agua de lluvia</h4>
+                <p>Beneficios de el agua de lluvia en tus plantas</p>
+            </div>
+            
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v11.mp4" type="video/mp4">
+                </video>
+                <h4>Mitos y verdades de las plantas</h4>
+                <p>Datos que no sabias sobre tus plantas</p>
+            </div>
+
+            <div class="video-item">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/v12.mp4" type="video/mp4">
+                </video>
+                <h4>Tiempo de crecimiento</h4>
+                <p>Identifica porque tus plantas no crecen</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Herbalink Modular - Cultiva tu bienestar</p>
+    </footer>
+
+    <script src="script-guias.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    </body>
+</html>

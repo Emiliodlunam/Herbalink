@@ -1,0 +1,741 @@
+/* ========================================
+   RESPONSIVE DESIGN - HERBALINK MODULAR
+   Archivo: responsive.css
+   ======================================== */
+
+/* ==========================================
+   TABLETS Y PANTALLAS MEDIANAS (768px - 1024px)
+   ========================================== */
+@media screen and (max-width: 1024px) {
+    /* Header ajustes */
+    header {
+        padding: 15px 30px;
+    }
+    
+    nav ul {
+        gap: 20px;
+    }
+    
+    nav li {
+        margin-left: 15px;
+    }
+    
+    /* Hero sections */
+    .hero-image-new h1,
+    .hero-guias-new h1,
+    .hero-content-new h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero-content-new p {
+        font-size: 1.1em;
+    }
+    
+    /* Grids */
+    .product-grid,
+    .product-grid-essentials,
+    .recommendations-grid,
+    .propósito-grid {
+        gap: 20px;
+    }
+    
+    /* Community page */
+    .community-page {
+        gap: 20px;
+        padding: 20px 15px;
+    }
+    
+    .feed-section {
+        width: 500px;
+    }
+}
+
+/* ==========================================
+   MÓVILES Y TABLETS PEQUEÑAS (481px - 768px)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    /* ===== HEADER ===== */
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+    
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .logo-img {
+        width: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1.3em;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav li {
+        margin-left: 0;
+    }
+    
+    nav a {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+    
+    .social-icon {
+        order: -1;
+    }
+    
+    /* Cart icon en tienda */
+    .cart-icon-container {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        margin-left: 0;
+    }
+    
+    .cart-icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* ===== HERO SECTIONS ===== */
+    .hero-image-new,
+    .hero-guias-new,
+    .hero {
+        padding: 80px 15px;
+    }
+    
+    .hero-image-new h1,
+    .hero-guias-new h1,
+    .hero h2 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    
+    .hero-content-new p,
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .start-button {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+    
+    /* ===== SECCIONES GENERALES ===== */
+    section {
+        padding: 40px 20px;
+    }
+    
+    section h2,
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    
+    /* ===== ICONOS DE VALOR (Home) ===== */
+    .value-icons-section {
+        padding: 30px 15px;
+    }
+    
+    .icon-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .icon-box {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ===== PROPÓSITOS (Home) ===== */
+    .propósitos-section {
+        padding: 40px 20px;
+    }
+    
+    .propósito-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .propósito-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* ===== PRODUCTOS (Home & Tienda) ===== */
+    .product-grid,
+    .product-grid-essentials {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-card,
+    .product-card-essential {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* ===== RESEÑAS EXPERTAS (Home) ===== */
+    .expert-reviews-section {
+        padding: 40px 15px;
+    }
+    
+    .carousel-container {
+        min-height: 200px;
+    }
+    
+    .review-text {
+        font-size: 1em;
+    }
+    
+    /* ===== RECOMENDACIONES (Guías) ===== */
+    .recommendations-section {
+        padding: 40px 15px;
+    }
+    
+    .recommendations-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rec-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* ===== PASOS (Guías) ===== */
+    .steps-section {
+        padding: 40px 20px;
+    }
+    
+    .step-by-step-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .step-content .step-image {
+        height: 200px;
+    }
+    
+    /* ===== VIDEOS (Guías) ===== */
+    .videos-section,
+    .videos-section2 {
+        padding: 40px 15px;
+    }
+    
+    .videos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    /* Anuncio premium */
+    .premium-ad-container {
+        padding: 30px 15px;
+        margin: 30px 15px;
+    }
+    
+    .premium-ad-container h3 {
+        font-size: 1.4em;
+    }
+    
+    .premium-ad-container p {
+        font-size: 1em;
+    }
+    
+    /* ===== COMUNIDAD ===== */
+    .community-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+    }
+    
+    .profile-card-container,
+    .feed-section {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .profile-login-prompt {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        min-height: 400px;
+    }
+    
+    /* Profile card */
+    .profile-banner {
+        height: 100px;
+    }
+    
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+    }
+    
+    .stats-grid {
+        flex-wrap: wrap;
+    }
+    
+    .badge-icons img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Feed */
+    .create-post {
+        padding: 12px 15px;
+    }
+    
+    .create-post textarea {
+        min-height: 60px;
+        font-size: 0.9em;
+    }
+    
+    .post-card {
+        padding: 15px;
+    }
+    
+    .post-header .post-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .post-image {
+        max-height: 250px;
+    }
+    
+    .feed-filters {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        font-size: 0.85em;
+        padding: 6px 12px;
+    }
+    
+    /* ===== TIENDA ===== */
+    /* Sidebar carrito */
+    .cart-sidebar {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    /* Modal detalle producto */
+    .modal-content-detail {
+        padding: 20px;
+        margin: 5% 10px;
+    }
+    
+    .product-detail-layout {
+        flex-direction: column;
+    }
+    
+    .product-images-container,
+    .product-info-detail {
+        min-width: unset;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .detail-main-image {
+        height: 250px;
+    }
+    
+    #detailName {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    #detailAura {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .detail-price {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    #detailDescription {
+        text-align: center;
+    }
+    
+    .add-to-cart-detail {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* ===== MODALES ===== */
+    .modal-content {
+        width: 95%;
+        max-width: 350px;
+        padding: 25px;
+        margin: 15% auto;
+    }
+    
+    .close-btn,
+    .close-detail-btn {
+        font-size: 24px;
+    }
+    
+    /* ===== FOOTER ===== */
+    footer {
+        padding: 15px 10px;
+        font-size: 0.85em;
+    }
+}
+
+/* ==========================================
+   MÓVILES PEQUEÑOS (320px - 480px)
+   ========================================== */
+@media screen and (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 10px 15px;
+    }
+    
+    .logo-img {
+        width: 35px;
+    }
+    
+    .logo-text {
+        font-size: 1.1em;
+    }
+    
+    nav a {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+    
+    .social-icon img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* Hero */
+    .hero-image-new,
+    .hero-guias-new,
+    .hero {
+        padding: 60px 10px;
+    }
+    
+    .hero-image-new h1,
+    .hero-guias-new h1,
+    .hero h2 {
+        font-size: 1.6em;
+    }
+    
+    .hero-content-new p,
+    .hero p {
+        font-size: 0.9em;
+    }
+    
+    .start-button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+    
+    /* Secciones */
+    section {
+        padding: 30px 15px;
+    }
+    
+    section h2,
+    .section-title {
+        font-size: 1.3em;
+    }
+    
+    /* Iconos */
+    .icon-box img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .icon-box h3 {
+        font-size: 1em;
+    }
+    
+    /* Tarjetas */
+    .product-card,
+    .product-card-essential,
+    .propósito-card,
+    .rec-card,
+    .step-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .product-card h3,
+    .product-card-essential h3 {
+        font-size: 1.1em;
+    }
+    
+    .price {
+        font-size: 1.2em;
+    }
+    
+    /* Comunidad */
+    .profile-card-container,
+    .feed-section,
+    .profile-login-prompt {
+        max-width: 100%;
+    }
+    
+    .profile-banner {
+        height: 80px;
+    }
+    
+    .profile-picture {
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+    }
+    
+    .profile-info h2 {
+        font-size: 1.3em;
+    }
+    
+    .stat-number {
+        font-size: 1em;
+    }
+    
+    .badge-icons img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .create-post .post-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .post-card {
+        padding: 12px;
+    }
+    
+    .post-header .post-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .post-text {
+        font-size: 0.9em;
+    }
+    
+    .post-image {
+        max-height: 200px;
+    }
+    
+    /* Videos */
+    .video-item {
+        max-width: 100%;
+    }
+    
+    /* Pasos */
+    .step-content .step-image {
+        height: 150px;
+    }
+    
+    /* Carrito */
+    .cart-sidebar {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .cart-icon-container {
+        top: 12px;
+        right: 15px;
+    }
+    
+    .cart-icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    /* Modal detalle producto */
+    .modal-content-detail {
+        padding: 15px;
+        margin: 5% 5px;
+    }
+    
+    .detail-main-image {
+        height: 200px;
+    }
+    
+    #detailName {
+        font-size: 1.5em;
+    }
+    
+    #detailAura {
+        font-size: 1em;
+    }
+    
+    .detail-price {
+        font-size: 1.8em;
+    }
+    
+    #detailDescription {
+        font-size: 0.9em;
+    }
+    
+    .add-to-cart-detail {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+    
+    /* Botones */
+    .add-to-cart,
+    .submit-post-btn,
+    .cta-button,
+    .cta-ad-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    
+    /* Modal login */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        margin: 20% auto;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.3em;
+    }
+    
+    /* Footer */
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* ==========================================
+   LANDSCAPE MODE (Modo horizontal móvil)
+   ========================================== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero-image-new,
+    .hero-guias-new,
+    .hero {
+        padding: 40px 15px;
+    }
+    
+    .hero-image-new h1,
+    .hero-guias-new h1,
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    
+    .modal-content,
+    .modal-content-detail {
+        margin: 5% auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .profile-banner {
+        height: 60px;
+    }
+    
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+    }
+}
+
+/* ==========================================
+   UTILIDADES RESPONSIVE
+   ========================================== */
+
+/* Ocultar elementos en móvil */
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+/* Mostrar solo en móvil */
+.show-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .show-mobile {
+        display: block;
+    }
+}
+
+/* Texto responsive */
+@media screen and (max-width: 768px) {
+    .responsive-text {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .responsive-text {
+        font-size: 0.85em;
+    }
+}
+
+/* Imágenes responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Videos responsive */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevenir zoom en inputs en iOS */
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mejorar tap targets en móvil */
+@media screen and (max-width: 768px) {
+    button,
+    a,
+    input[type="submit"] {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}

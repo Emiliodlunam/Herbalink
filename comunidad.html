@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad - Herbalink</title>
+    <link rel="stylesheet" href="styles-comunidad.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Herbalink" class="logo-img"> 
+            <h1 class="logo-text">HERBALINK</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="comunidad.html" class="active">Comunidad</a></li>
+                <li><a href="#" id="loginBtn">Iniciar Sesión</a></li>
+                <li class="social-icon"><a href="https://www.instagram.com/herbalink_modular?igsh=MXh0bjhkNXc3ZWFleg%3D%3D"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="community-page">
+        
+        <section id="profileSection" class="profile-card-container" style="display: none;">
+            <div class="profile-card">
+                <div class="profile-banner"></div>
+                
+                <div class="profile-info">
+                    <img src="imagenes/p1.jpeg" alt="Foto de Perfil" class="profile-picture">
+                    <h2>Flora_Fanática</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">340</span>
+                            <span class="stat-label">Puntos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Plantas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Posts</span>
+                        </div>
+                    </div>
+
+                    <div class="badges">
+                        <span class="badge-title">(Logros)</span>
+                        <div class="badge-icons">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3277/3277732.png" alt="Novato de Oro" title="Novato de Oro">
+                            <img src="https://cdn-icons-png.flaticon.com/512/10002/10002422.png" alt="Experto en Riego" title="Experto en Riego">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3663/3663554.png" alt="Primeras Cosechas" title="Primeras Cosechas">
+                        </div>
+                    </div>
+
+                    <div class="profile-nav">
+                        <button class="active">Publicaciones</button>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section id="loginPrompt" class="profile-login-prompt" style="display: none;">
+            <div class="login-prompt-content">
+                <h2>Únete a la Comunidad 🌱</h2>
+                <p>Suscribete para descubrir novedades</p>
+                <button id="openLoginModalBtn" class="cta-button">Suscribete</button>
+                <p class="small-note">Si eres nuevo, ¡regístrate y comienza a compartir!</p>
+            </div>
+        </section>
+
+        <section class="feed-section">
+            <h2 class="section-title">Comunidad</h2>
+            
+            <form id="newPostForm" class="create-post">
+                <img src="imagenes/p1.jpeg" alt="Avatar" class="post-avatar">
+                <textarea id="newPostInput" placeholder="Comparte tus avances..." class="post-input" required></textarea>
+                
+                <div class="post-actions-row">
+                    <button type="submit" class="submit-post-btn">Publicar</button>
+                </div>
+            </form>
+            
+            <div id="createPostPrompt" style="display: none;" class="create-post-prompt">
+                <p>¡Únete a la conversación! <a href="#" id="openLoginFromFeed">Inicia Sesión</a> para crear publicaciones y comentar.</p>
+            </div>
+            
+            <div class="feed-filters">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Preguntas</button>
+                <button class="filter-btn" id="misPublicacionesBtn">Mis Publicaciones</button>
+            </div>
+
+            <div class="posts-list">
+                
+                <div class="post-card" data-post-id="1" data-type="pregunta" data-owner="Don_Hortelano"> 
+                    <div class="post-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="Don_Hortelano" class="post-avatar">
+                        <h4>Don_Hortelano</h4>
+                    </div>
+                    <p class="post-text">¿Alguien sabe por qué mi cilantro se secó? ¡Adjunto foto!</p>
+                    <img src="imagenes/c1.png" alt="Cilantro Seco" class="post-image">
+                    <div class="post-actions">
+                        <span>15 Likes</span>
+                        <span class="comment-count" data-count="3">3 Comentarios</span>
+                    </div>
+                    
+                    <div class="comments-section">
+                        <div class="comments-list" id="comments-post-1">
+                            <div class="comment-item">
+                                <span class="comment-user">Flora_Fanática:</span> 
+                                <span class="comment-text">Parece que es por falta de riego, intenta espaciar los riegos.</span>
+                            </div>
+                            <div class="comment-item">
+                                <span class="comment-user">LalaGarden:</span> 
+                                <span class="comment-text">¡O falta de nitrógeno! Prueba con un poco de humus de lombriz.</span>
+                            </div>
+                        </div>
+                        <div class="comment-form-container">
+                            <input type="text" placeholder="Escribe tu comentario..." class="comment-input" data-post-id="1">
+                            <button class="submit-comment-btn" data-post-id="1">Enviar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="post-footer">
+                        <button class="comment-btn post-action-btn" data-toggle-id="1">Comentar</button>
+                    </div>
+                </div>
+
+                <div class="post-card" data-post-id="2" data-type="logro" data-owner="LalaGarden">
+                    <div class="post-header">
+                        <img src="imagenes/imgbal.jpeg" alt="LalaGarden" class="post-avatar">
+                        <h4>LalaGarden</h4>
+                    </div>
+                    <p class="post-text">¡Mi primer kit fue un éxito total, lo recomiendo al 100%! </p>
+                    <img src="imagenes/imgbal.jpeg" alt="Logro de Balcón" class="post-image">
+                    <div class="post-actions">
+                        <span>48 Likes</span>
+                        <span class="comment-count" data-count="4">4 Comentarios</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comments-list" id="comments-post-2">
+                            <div class="comment-item"><span class="comment-user">Don_Hortelano:</span> <span class="comment-text">¡Qué genial! ¿Cuánto tiempo tardó?</span></div>
+                            <div class="comment-item"><span class="comment-user">Omarcito:</span> <span class="comment-text">Está muy bonito!!</span></div>
+                            <div class="comment-item"><span class="comment-user">RosaSam:</span> <span class="comment-text">¿Cómo lo hiciste?</span></div>
+                            <div class="comment-item"><span class="comment-user">Amar_anto:</span> <span class="comment-text">Ten cuidado con la luz solar, podría dañar los frutos.</span></div>
+                        </div>
+                        <div class="comment-form-container">
+                            <input type="text" placeholder="Escribe tu comentario..." class="comment-input" data-post-id="2">
+                            <button class="submit-comment-btn" data-post-id="2">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <button class="comment-btn post-action-btn" data-toggle-id="2">Comentar</button>
+                    </div>
+                </div>
+
+                <div class="post-card" data-post-id="3" data-type="logro" data-owner="Gara_87">
+                    <div class="post-header">
+                        <img src="imagenes/imgkit.jpeg" alt="Gara_87" class="post-avatar">
+                        <h4>Gara_87</h4>
+                    </div>
+                    <p class="post-text">Alguien sabe dónde puedo conseguir más semillas?</p>
+                    <div class="post-actions">
+                        <span>13 Likes</span>
+                        <span class="comment-count" data-count="2">2 Comentarios</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comments-list" id="comments-post-3">
+                            <div class="comment-item"><span class="comment-user">Rayitooo</span> <span class="comment-text">Tal vez podrías ver en el apartado de tienda.</span></div>
+                            <div class="comment-item"><span class="comment-user">Herbalink</span> <span class="comment-text">En la tienda encontraras todo lo necesario.</span></div>
+                        </div>
+                        <div class="comment-form-container">
+                            <input type="text" placeholder="Escribe tu comentario..." class="comment-input" data-post-id="3">
+                            <button class="submit-comment-btn" data-post-id="3">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <button class="comment-btn post-action-btn" data-toggle-id="3">Comentar</button>
+                    </div>
+                </div>
+
+                <div class="post-card" data-post-id="4" data-type="logro" data-owner="Arbolitoo">
+                    <div class="post-header">
+                        <img src="imagenes/imgbal.jpeg" alt="Arbolitoo" class="post-avatar">
+                        <h4>Arbolitoo</h4>
+                    </div>
+                    <p class="post-text">Recomiendenme algo nuevo en este espacio </p>
+                    <img src="imagenes/casa.png" alt="Espacio de Casa" class="post-image">
+                    <div class="post-actions">
+                        <span>48 Likes</span>
+                        <span class="comment-count" data-count="0">0 Comentarios</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comments-list" id="comments-post-4">
+                            </div>
+                        <div class="comment-form-container">
+                            <input type="text" placeholder="Escribe tu comentario..." class="comment-input" data-post-id="4">
+                            <button class="submit-comment-btn" data-post-id="4">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <button class="comment-btn post-action-btn" data-toggle-id="4">Comentar</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+    </main>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Acceder</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Herbalink Modular - Cultiva tu bienestar</p>
+    </footer>
+    
+    <script src="script-comunidad.js" defer></script>
+    <script src="script.js" defer></script> 
+</body>
+</html>

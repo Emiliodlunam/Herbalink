@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Herbalink</title>
+    <link rel="stylesheet" href="styles-tienda.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Herbalink" class="logo-img"> 
+            <h1 class="logo-text">HERBALINK</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html" class="active">Tienda</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="#" id="loginBtn">Iniciar Sesión</a></li>
+                <li class="social-icon"><a href="https://www.instagram.com/herbalink_modular?igsh=MXh0bjhkNXc3ZWFleg%3D%3D"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container" id="openCartBtn">
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito de Compras" class="cart-icon">
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Nuestra Tienda</h2>
+        <p>Descubre todo lo que necesitas para que tu huerto en casa prospere con nuestros productos ecológicos 🌿</p>
+    </section>
+
+    <section class="top-kits">
+        <h2>Nuestros Kits basicos</h2>
+            <div class="product-grid">
+                
+                <div class="product-card" data-name="Kit Familiar" data-price="499">
+                    <img src="imagenes/imgkit.jpeg" alt="Kit Familiar">
+                    <h3>Kit Completo</h3>
+                    <p>Ideal para crear un huerto modular en casa.</p>
+                    <span class="price">$499 MXN</span>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+
+                <div class="product-card" data-name="Kit Premium" data-price="699">
+                    <img src="imagenes/imgkit2.jpeg" alt="Kit Premium">
+                    <h3>Kit Escencial</h3>
+                    <p>Lo necesario si quieres empezar por algo pequeño</p>
+                    <span class="price">$699 MXN</span>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+
+            <div class="product-card" data-name="Kit Balcón" data-price="550">
+                <img src="imagenes/masem.png" alt="Kit Balcón">
+                <h3>Kit Sencillo</h3>
+                <p>Si aún quieres un poco más</p>
+                <span class="price">$550 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-products">
+        <h2>Otros productos</h2>
+        <div class="product-grid">
+            
+            <div class="product-card" data-name="Semillas de Jitomate" data-price="59">
+                <img src="imagenes/jit.png" alt="Semillas">
+                <h3>Semillas de Jitomate</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$59 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Cebolla" data-price="89">
+                <img src="imagenes/ceb.png" alt="Macetas">
+                <h3>Semillas de Cebolla</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$89 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Chile" data-price="120">
+                <img src="imagenes/chi.png" alt="Fertilizante">
+                <h3>Semillas de Chile</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$120 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Ejote" data-price="249">
+                <img src="imagenes/ejo.png" alt="Herramientas">
+                <h3>Semillas de Ejote</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$249 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+             <div class="product-card" data-name="Semillas de Lechuga" data-price="85">
+                <img src="imagenes/lech.png" alt="Semillas Hortalizas">
+                <h3>Semillas de Lechuga</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$85 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Rabano" data-price="160">
+                <img src="imagenes/rab.png" alt="Tierra de Cultivo">
+                <h3>Semillas de Rabano</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Cilantro" data-price="160">
+                <img src="imagenes/cil.png" alt="Tierra de Cultivo">
+                <h3>Semillas de Cilantro</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Prerejil" data-price="160">
+                <img src="imagenes/pere.png" alt="Tierra de Cultivo">
+                <h3>Semillas de Perejil</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas de Pimiento" data-price="160">
+                <img src="imagenes/pim.png" alt="Tierra de Cultivo">
+                <h3>Semillas de Pimiento</h3>
+                <p>Libres de pesticidas y con alta tasa de germinación.</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="3 Macetas" data-price="160">
+                <img src="imagenes/macetas.png" alt="Tierra de Cultivo">
+                <h3>Kit de Macetas (3)</h3>
+                <p>Macetas duraderas de ---</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Regadera Metalica" data-price="160">
+                <img src="imagenes/reg.png" alt="Tierra de Cultivo">
+                <h3>Regadera</h3>
+                <p>Regadera metalica y duradera con capacidad de 5Lt</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="6 Paquetes de Semillas" data-price="160">
+                <img src="imagenes/semillas.png" alt="Tierra de Cultivo">
+                <h3>Paquete de 6 Semillas</h3>
+                <p>Semilla de tu eleccion para que completes tu kit</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Semillas + Sustrato" data-price="160">
+                <img src="imagenes/semsus.png" alt="Tierra de Cultivo">
+                <h3>Kit Balanceado</h3>
+                <p>3 paquetes de semillas y una bolsa de sustrato</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card" data-name="Sustrato" data-price="160">
+                <img src="imagenes/sustrato.png" alt="Tierra de Cultivo">
+                <h3>Sustrato</h3>
+                <p>2 bolsas de sustrato para hacer crecer tus plantas</p>
+                <span class="price">$160 MXN</span>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <aside id="shoppingCart" class="cart-sidebar">
+        <div class="sidebar-header">
+            <h3>🛒 Tu Carrito</h3>
+            <button id="closeCartBtn" class="close-sidebar-btn">&times;</button>
+        </div>
+        <div id="cart-items-list" class="cart-items-list">
+            <p id="empty-cart-message">El carrito está vacío.</p>
+        </div>
+        <div class="sidebar-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00 MXN</span>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </aside>
+
+    <div id="productDetailModal" class="modal-product-detail">
+        <div class="modal-content-detail">
+            <span class="close-detail-btn">&times;</span>
+            <div class="product-detail-layout">
+                
+                <div class="product-images-container">
+                    <img id="detailMainImage" src="placeholder.png" alt="Imagen principal del producto" class="detail-main-image">
+                    </div>
+
+                <div class="product-info-detail">
+                    <h2 id="detailName">Nombre del Producto</h2>
+                    <h3 id="detailAura">Aura</h3>
+                    <span id="detailPrice" class="detail-price">$0.00 MXN</span>
+                    
+                    <p id="detailDescription">Descripción breve del producto.</p>
+                    
+                    <button id="detailAddToCartBtn" class="add-to-cart-detail">Añadir al Carrito</button>
+                    
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Acceder</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Herbalink - Cultiva tu bienestar</p>
+    </footer>
+
+    <script src="script-tienda.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
